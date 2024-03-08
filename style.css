@@ -1,0 +1,38 @@
+body{
+  font-family: rubik, helvetica, arial, sans-serif;
+  font-size: 14px;
+}
+a{
+  color: rgb(0, 84, 168);
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+.float-right{
+  float: right;
+}
+.w-30{
+  width: 30%;
+}
+.main-article{
+  width: 45%;
+  padding: 30px;
+  margin: auto;
+  background-color: rgb(232, 233, 231);
+}
+/*стилі для таблиці*/
+.table-history{
+  width: 70%;
+  border-collapse: collapse;
+  background-color: rgb(248, 249, 250);
+}
+.table-history th,
+.table-history td{
+  border: 1px solid gray;
+  padding: 6px;
+}
+.table-history th{
+  color: rgb(0, 84, 168);
+  background-color: rgb(234, 236, 240);
+}
