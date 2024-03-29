@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 body {
+  margin: 0;
+  background-image: url(./assets/images/Site-background-light.webp);
   font-family: rubik, helvetica, arial, sans-serif;
   font-size: 14px;
 }
@@ -33,7 +35,7 @@ figcaption{
   line-height: initial;
 }
 .info {
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding: 15px;
   padding-left: 25px;

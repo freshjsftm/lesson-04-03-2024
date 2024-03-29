@@ -1,0 +1,123 @@
+.main-header {
+  height: 300px;
+  padding-top: 100px;
+  background-color: rgb(104, 212, 255);
+  background-image: url(./../images/Light_background_deepslate_transition.png),
+    url(./../images/Light_background_grass.png),
+    linear-gradient(
+      0deg,
+      rgba(47, 9, 4, 1) 28%,
+      rgba(192, 244, 255, 1) 50%,
+      rgba(129, 199, 255, 1) 100%
+    );
+  background-repeat: repeat-x, repeat-x, no-repeat;
+  background-position: bottom left, 0 120px, 0 0;
+}
+main {
+  margin-top: -140px;
+}
+.main-wrapper {
+  min-width: 720px;
+  width: 45%;
+  margin: auto;
+}
+.main-menu {
+  list-style: none;
+  margin: 0;
+  font-size: 12px;
+}
+.main-menu-item {
+  display: inline-block;
+  margin: 0 1.2em;
+  padding-bottom: 30px;
+  position: relative;
+}
+.main-menu-item::after {
+  content: '\25BC';
+}
+.main-menu-item:hover::after {
+  content: '\25B2';
+}
+.main-menu-item > .submenu::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+  top: -18px;
+  left: 42%;
+}
+.main-menu-item > a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.main-menu-item > a:hover {
+  text-decoration: underline;
+}
+.main-menu-item:hover > .submenu {
+  display: block;
+}
+.submenu {
+  display: none;
+  width: 100%;
+  min-width: 150px;
+  max-width: 200px;
+  position: absolute;
+  top: 30px;
+  left: -50%;
+  list-style: none;
+  padding: 7px;
+  background-color: white;
+  font-size: 14px;
+}
+.left0 {
+  left: 0;
+}
+.left-10 {
+  left: -10%;
+}
+.left-90 {
+  left: -90%;
+}
+.submenu-item {
+  position: relative;
+}
+.submenu-item:has(> .submenu)::after {
+  content: '\1433';
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.submenu-item:hover > .submenu {
+  display: block;
+  left: 100%;
+  top: 0;
+}
+.submenu-link {
+  display: block;
+  padding: 5px 9px;
+  text-transform: capitalize;
+  color: black;
+}
+.submenu-item:hover > .submenu-link,
+.submenu-link:hover {
+  background-color: rgb(211, 233, 255);
+  color: rgb(0, 84, 168);
+}
+
+.explore::before {
+  content: url(./../icons/book-open-blank-variant.svg);
+  display: inline-block;
+  width: 14px;
+  transform: translate(-3px, 2px);
+}
+
+.home::before {
+  content: url(./../icons/home.svg);
+  display: inline-block;
+  width: 16px;
+  transform: translate(-3px, 2px);
+}
